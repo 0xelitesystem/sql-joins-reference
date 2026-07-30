@@ -8,15 +8,19 @@ A join combines rows from two tables based on a condition, and the join type dec
 
 ## What is inside
 
-- `01-inner-join.md` matches on both sides, with example tables and results.
-- `02-left-and-right-joins.md` keeping unmatched rows from one side.
-- `03-full-outer-and-cross-joins.md` keeping everything, and the Cartesian product.
-- `04-self-joins.md` joining a table to itself with aliases.
-- `05-common-mistakes.md` fan-out row multiplication and NULL pitfalls.
+- [01-inner-join.md](01-inner-join.md) matches on both sides, with example tables and results.
+- [02-left-and-right-joins.md](02-left-and-right-joins.md) keeping unmatched rows from one side.
+- [03-full-outer-and-cross-joins.md](03-full-outer-and-cross-joins.md) keeping everything, and the Cartesian product.
+- [04-self-joins.md](04-self-joins.md) joining a table to itself with aliases.
+- [05-common-mistakes.md](05-common-mistakes.md) fan-out row multiplication and NULL pitfalls.
 
 ## The stance
 
 Joins are simple once you think in terms of "which unmatched rows survive." Most join bugs are not exotic; they are a forgotten join condition producing a Cartesian explosion, a many-to-many join silently multiplying rows, or a filter in the WHERE clause quietly turning an outer join back into an inner one.
+
+## More
+
+Part of a catalog of single-file browser tools and plain-language references, all MIT licensed and dependency-free: [0xelitesystem.github.io](https://0xelitesystem.github.io/). Built by [elitesystem.ai](https://elitesystem.ai).
 
 ## License
 
